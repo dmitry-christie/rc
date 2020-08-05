@@ -967,3 +967,28 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+
+.container {
+	width: 1080px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+#masthead {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.contacts-outer {
+	width: 100%;
+	background-color: #98141b;
+}

@@ -12,19 +12,56 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rockcapital' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'rockcapital' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'rockcapital' ), 'rockcapital', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+		<div class="contacts-outer">
+			<div class="contacts container">
+				<div class="item">
+					<div class="icon">
+
+					</div>
+					<div class="text">
+						address
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+
+					</div>
+					<div class="text">
+						hours
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+
+					</div>
+					<div class="text">
+						phone
+					</div>
+				</div>
+				<div class="item">
+					<div class="icon">
+
+					</div>
+					<div class="text">
+						email
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer-outer">
+			<div class="footer-inner">
+				<div class="info">
+					<div class="info-col"></div>
+					<div class="info-col"></div>
+				</div>
+				<hr>
+				<div class="menu-and-copy">
+					<div class="menu"></div>
+					<div class="copyright"></div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
