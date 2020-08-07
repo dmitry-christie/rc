@@ -15,22 +15,56 @@
 get_header();
 ?>
 
+<style>
+
+
+.stripes {
+
+	background-image: url('<?php echo get_template_directory_uri(); ?>/img/theme/LINES_ROCK.png');
+	height: 100%;
+	width: 80%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+.hero {
+	background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');
+	height: 80vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+</style>
+
+
+	<div class="hero" >
+	<div class="stripes">
+		
+
+	</div>
+
+
+			<div class="text">
+				Solid deicisions in everthing we do.
+			</div>
+		
+</div>
+
 	<main id="primary" class="site-main">
 
-		<?php
+		
+	<?php
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
 
 			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			$stylesheet_root = get_stylesheet_directory();
+			include( $stylesheet_root . '/inc/flexible-content.php' );
 
 		endwhile; // End of the loop.
 		?>
-
 	</main><!-- #main -->
 
 <?php

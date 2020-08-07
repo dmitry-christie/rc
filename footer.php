@@ -19,7 +19,8 @@
 
 					</div>
 					<div class="text">
-						address
+						Av. Engenheiro Duarte Pacheco,
+						Torre 2 - 17 Piso • Lisboa
 					</div>
 				</div>
 				<div class="item">
@@ -27,7 +28,8 @@
 
 					</div>
 					<div class="text">
-						hours
+						Mon - Sat: 8am - 6pm
+						Sunday:  Closed
 					</div>
 				</div>
 				<div class="item">
@@ -35,7 +37,7 @@
 
 					</div>
 					<div class="text">
-						phone
+						+351 212 386 5575
 					</div>
 				</div>
 				<div class="item">
@@ -43,7 +45,8 @@
 
 					</div>
 					<div class="text">
-						email
+						info@rockcapital.pt
+						info@lince-capital.com
 					</div>
 				</div>
 				
@@ -52,8 +55,22 @@
 		<div class="footer-outer">
 			<div class="footer-inner">
 				<div class="info">
-					<div class="info-col"></div>
-					<div class="info-col"></div>
+					<div class="info-col">
+
+					<p class="mini-header">ROCK CAPITAL INVESTMENTS RCI</p>
+
+					<p>CMVM Registration 1614 | Download SI Sheet</p>
+					<p>ISIN Cat A: PTLCNMIM0000</p>
+					<p>ISIN Cat B: PTLCNNIM0009</p>
+
+					</div>
+					<div class="info-col">
+					<p class="mini-header">LINCE CAPITAL, SCR, S.A</p>
+
+					<p>Avenida Duarte Pacheco, Torre II - 17.°</p>
+					<p>Andar, Sala G, 1070-102 Lisboa</p>
+
+					</div>
 				</div>
 				<hr>
 				<div class="menu-and-copy">
