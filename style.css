@@ -723,7 +723,7 @@ textarea {
 .posts-navigation,
 .site-main
 .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 0 0 0em;
 }
 
 .comment-navigation .nav-links,
@@ -753,7 +753,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0 0em;
 }
 
 .updated:not(.published) {
@@ -1158,6 +1158,10 @@ textarea {
 	display: none;
 }
 
+.form-block ._checkbox-radio label {
+	display: block;
+}
+
 .contacts  {
 	display: flex;
 	justify-content: space-between;
@@ -1165,6 +1169,86 @@ textarea {
 
 .contacts .item {
 	width: 25%;
-	margin: 2em 0px;
+	margin: 2em 0px 3em 0px;
 	color: white;
+	display: flex;
+}
+
+.contacts .item a {
+	color: white;
+	text-decoration: none;
+}
+
+.contacts .item .icon {
+	width: 30px;
+	height: auto;
+	margin: 0px 10px 0px 0px;
+}
+
+
+.contacts .item .text p {
+	margin: 0px;
+	font-size: 0.9em;
+}
+
+.footer-outer {
+	width: 100%;
+	background-color: black;
+}
+
+.contacts-outer {
+	margin-bottom: -1em;
+}
+.footer-outer p {
+	color: white;
+	margin: 0px;
+
+}
+
+.footer-outer .mini-header {
+	color: #98141b;
+	margin-bottom: 1em;
+}
+
+.footer-outer .info {
+	display: flex;
+}
+
+.footer-outer .info > div {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-right: 8em;
+}
+
+	
+
+
+.menu-and-copy {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 2em;
+}
+
+.menu-and-copy ul {
+	display: flex;
+	padding: 0px;
+	margin: 0px;	
+	list-style: none;
+}
+
+
+.menu-and-copy li {
+	margin: 0px;
+	padding: 0px;
+}
+
+.menu-and-copy .separator {
+margin: 0px 1em;
+}
+
+
+.menu-and-copy .menu a, .menu-and-copy .separator {
+    text-decoration: none;
+    color: white;
 }
