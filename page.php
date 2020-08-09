@@ -22,19 +22,32 @@ get_header();
 
 	background-image: url('<?php echo get_template_directory_uri(); ?>/img/theme/LINES_ROCK.png');
 	height: 100%;
-	width: 80%;
-	background-size: 80%;
+	width: 50%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
 .hero {
 	background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');
-	height: 80vh;
+	height: 60vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
 }
+
+.home .hero {
+	height: 80vh;
+}
+
+.home .stripes {
+	height: 100%;
+	width: 70%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+}
+
+
 </style>
 
 
@@ -43,11 +56,20 @@ get_header();
 		
 
 	</div>
-
-
-			<div class="text">
+			<?php if ( is_front_page())   {?>
+				<div class="text">
 				Solid deicisions in everthing we do.
 			</div>
+				
+			<?php } else {?>
+				<div class="page-title">
+					<?php single_post_title(); ?>
+				</div>
+				
+			<?php }?>
+			
+			
+			
 		
 </div>
 

@@ -239,14 +239,12 @@
 
 
 
-             <?php $header = get_sub_field('header'); if($header) { ?><h2 class="section-header txt-center sm-gold-line space" data-aos="fade-up"> <?php the_sub_field('header'); ?> </h6> <?php } ?>
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 space container" data-aos="fade-up">
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
                                     <div class="blurb txt-center">
-                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/images/icons/GC-ICON-' . $icon . '.png'; ?>">
-                                        <?php $header = get_sub_field('header'); if($header) { ?><h3 class="blurb-header sm-gold-line txt-center "><?php   the_sub_field('header');?> </h3> <?php } ?>
+                                        <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/ICONS/ROCK-ICON-' . $icon . '.png'; ?>">
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
                                     
