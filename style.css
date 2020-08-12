@@ -1100,12 +1100,33 @@ textarea {
 	border: 0px;
 }
 
+
+.form-container ._checkbox-radio {
+	display: flex;
+	align-items: center;
+}
+
+.form-container p, .form-container span {
+	color: #6d6e70;
+}
+
+.form-container ._checkbox-radio > span {
+	margin-left: 0.5em;
+}
 .form-container ._field-wrapper, .form-container ._field-wrapper input, .form-container ._field-wrapper textarea{
 	width: 100%;
 	border-radius: 0px;
 	border: 0px;
-	margin-bottom: 0.4em;
-	padding: 0.3em;
+	margin-bottom: 0.3em;
+	
+}
+.form-container input, .form-container textarea {
+	padding: 0.5em;
+
+}
+
+.form-container input::placeholder, .form-container textarea::placeholder  {
+	text-transform: uppercase;
 }
 
 .grey-padding {
@@ -1150,6 +1171,18 @@ textarea {
 	background-size: cover;
 }
 
+.tiles .right .right-form {
+	background-color: #d3d3d3;
+}
+
+.form-block .right {
+	background: #d3d3d3;
+}
+
+.form-block .right form {
+	background: #d3d3d3;
+}
+
 
 .form-block {
 	display: flex;
@@ -1168,7 +1201,7 @@ textarea {
 }
 
 .form-block .right form {
-    background: #F4F4F4 ;
+   
     color: black;
     padding: 3em 2em;
 }
@@ -1333,3 +1366,6 @@ margin: 0px 1em;
 	margin-right: 1em;
 }
 
+footer .info a {
+	color: white;
+}

@@ -59,7 +59,7 @@
 
 					<p class="mini-header">ROCK CAPITAL INVESTMENTS RCI</p>
 
-					<p>CMVM Registration 1614 | Download SI Sheet</p>
+					<p>CMVM Registration 1614 | <a target="_blank" href="https://rockcapital.pt/FIN_ROCK_CAPITAL_ENG_4.pdf">Download SI Sheet</a></p>
 					<p>ISIN Cat A: PTLCNMIM0000</p>
 					<p>ISIN Cat B: PTLCNNIM0009</p>
 
