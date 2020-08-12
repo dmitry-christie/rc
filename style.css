@@ -1060,21 +1060,24 @@ textarea {
 	padding: 2em 0px;
 }
 
-.section-header {
+.section-header, ._form-title {
 	margin: 0px;
 	font-weight: normal;
 	font-size: 2em;
+	font-family: 'Playfair Display', serif;	
 }
 
-.section-header::first-letter {
+._form-title {
+	font-size: 3em;
+}
+
+
+.section-header::first-letter, ._form-title::first-letter {
 	background-color: #d4d4d4;
 	padding-left: 5px;
 
 }
 
-.section-header:second-letter {
-	background-color: #d4d4d4;
-}
 
 .text_image > div {
 	width: 49%;
@@ -1087,12 +1090,22 @@ textarea {
 
 
 
-.button {
+.button, .form-container button {
 	background-color: #98141b;
 	padding: 0.5em 1em;
 	color: white;
 	text-transform: uppercase;
 	display: inline-block;
+	border-radius: 0px;
+	border: 0px;
+}
+
+.form-container ._field-wrapper, .form-container ._field-wrapper input, .form-container ._field-wrapper textarea{
+	width: 100%;
+	border-radius: 0px;
+	border: 0px;
+	margin-bottom: 0.4em;
+	padding: 0.3em;
 }
 
 .grey-padding {
