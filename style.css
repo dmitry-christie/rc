@@ -1382,3 +1382,12 @@ footer .info a {
     margin-top: -4em;
     margin-bottom: 4em;
 }
+
+.contact-us > div {
+    width: 50%;
+}
+
+.contact-us .left {
+    padding-top: 6em;
+    padding-right: 4em;
+}
