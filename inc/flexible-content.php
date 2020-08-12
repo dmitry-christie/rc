@@ -1721,6 +1721,7 @@ button.swiper-pagination-bullet {
 
                 
                     .form-block .left {
+                        background-size: cover;
                         background-image: url('<?php
                             $image_left = get_sub_field("image-left");
                             if($image_left) {

@@ -1140,6 +1140,7 @@ textarea {
 
 .form-block {
 	display: flex;
+	min-height: 500px;
 }
 
 .form-block > div {
@@ -1267,7 +1268,6 @@ margin: 0px 1em;
 .blurbs-type-1 .blurb {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	min-width: 355px;
 	padding: 1em;
