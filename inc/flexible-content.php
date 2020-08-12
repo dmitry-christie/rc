@@ -1662,6 +1662,7 @@ button.swiper-pagination-bullet {
                         background-image: url('<?php the_sub_field('background'); ?>'); 
                         text-align: center;
                         color: white;
+                        background-size: cover;
                     }
 
                     .monday_inspiration .quote {
