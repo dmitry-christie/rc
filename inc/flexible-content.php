@@ -241,15 +241,30 @@
 
                         <?php if( have_rows('blurb_type_1_repeater') ): ?>
                             <div class="blurbs blurbs-type-1 space container" data-aos="fade-up">
+
+                                <?php $k = 0; ?>
                                 <?php while ( have_rows('blurb_type_1_repeater') ) : the_row(); ?>
 
                                     <div class="blurb txt-center">
                                         <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/ICONS/ROCK-ICON-' . $icon . '.png'; ?>">
                                         <span> <?php the_sub_field('text'); ?></span>
                                     </div>
+                                    <?php $k++; ?>
+                                    <div id="separator<?php echo $k; ?>" class="separator"></div>
+                                   
                                     
                                    
                                     <?php endwhile; ?>
+
+                                    <style>
+                                        #separator<?php echo $k; ?> {
+                                            display: none;
+                                        }
+                                    </style>
+                                    
+                            </div>
+                            <div class="container button-container">
+                                <a href="<?php the_field('button_url'); ?>"><div class="button button-blurbs"><?php $button_text = get_field('button_text'); if($button_text) { echo $button_text;} else { echo 'Read More'; } ?></div></a>
                             </div>
                         <?php endif; ?>
             
@@ -1653,7 +1668,7 @@ button.swiper-pagination-bullet {
                         width: 700px;
                         max-width: 90%;
                         margin: 0 auto;
-                        padding-top: 4em;
+                        padding-top: 6em;
                         font-size: 1.5em;
                     }
 
@@ -1666,9 +1681,13 @@ button.swiper-pagination-bullet {
                         max-width: 90%;
                         margin: 0 auto;
                         padding-top: 2em;
-                        padding-bottom: 6em;
+                        padding-bottom: 8em;
                         font-family: 'Roboto', sans-serif;
                     
+                    }
+
+                    .quote h3 {
+                        font-weight: 400;
                     }
 
                 </style>

@@ -1063,6 +1063,7 @@ textarea {
 .section-header {
 	margin: 0px;
 	font-weight: normal;
+	font-size: 2em;
 }
 
 .section-header::first-letter {
@@ -1079,6 +1080,10 @@ textarea {
 	width: 49%;
 }
 
+
+.text_image p {
+	color: #6d6e70;
+}
 
 
 
@@ -1251,4 +1256,39 @@ margin: 0px 1em;
 .menu-and-copy .menu a, .menu-and-copy .separator {
     text-decoration: none;
     color: white;
+}
+
+.blurbs-type-1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 4em 0px;
+}
+
+.blurbs-type-1 .blurb {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 355px;
+}
+
+.blurbs-type-1 .separator {
+	height: 100%;
+	min-height: 200px;
+	width: 1px;
+	background-color: #999b9d;
+}
+
+.blurbs-type-1 span {
+	color: #6d6e70;
+}
+
+.button-blurbs {
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
 }
