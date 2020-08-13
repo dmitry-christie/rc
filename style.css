@@ -1391,3 +1391,17 @@ footer .info a {
     padding-top: 6em;
     padding-right: 4em;
 }
+
+.page-title {
+	position: absolute;
+	top: 40vh;
+	left: calc((100% - 137px) / 2);
+	display: flex;
+	align-items: center;
+	color: white;
+	
+    font-weight: 300;
+    font-size: 3.2em;	
+    font-family: 'Playfair Display', serif;
+
+}
