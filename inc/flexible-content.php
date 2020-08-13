@@ -1625,6 +1625,10 @@ button.swiper-pagination-bullet {
                     .tiles<?php echo $uniqueid; ?> .right {
                         background-image: url('<?php the_sub_field('right-image'); ?>'); 
                     }
+
+                    .tiles<?php echo $uniqueid; ?> .left-container {
+                        color: <?php the_sub_field('left-text-colour'); ?>; 
+                    }
                 </style>
                 <div class="tiles tiles<?php echo $uniqueid; ?> space">
                     <div class="left">
