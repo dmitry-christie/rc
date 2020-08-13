@@ -1612,17 +1612,21 @@ button.swiper-pagination-bullet {
              
 
              <?php elseif( get_row_layout() == 'tiles' ): ?>
+
+
+             <?php $uniqueid = rand(10000000,900000000); ?>
                 <style>
-                    .tiles .left {
+                    .tiles<?php echo $uniqueid; ?> .left {
                         background-color: <?php the_sub_field('left-background_colour'); ?>;
                         background-image: url('<?php the_sub_field('left-background'); ?>'); 
+
                     }
 
-                    .tiles .right {
+                    .tiles<?php echo $uniqueid; ?> .right {
                         background-image: url('<?php the_sub_field('right-image'); ?>'); 
                     }
                 </style>
-                <div class="tiles space">
+                <div class="tiles<?php echo $uniqueid; ?> space">
                     <div class="left">
                         <div class="left-container">
                         <?php the_sub_field('left-text'); ?>
