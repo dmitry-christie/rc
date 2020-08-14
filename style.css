@@ -663,6 +663,8 @@ textarea {
 	padding-left: 0;
 }
 
+
+
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
@@ -1370,7 +1372,7 @@ ul {
 	list-style-type: none;
 	color: #6d6e70;
 }
-ul li:before { 
+.visual-editor ul li:before { 
 	content:"•"; 
 	font-size:10pt; 
 	margin-right: 1em;
