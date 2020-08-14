@@ -1791,6 +1791,19 @@ button.swiper-pagination-bullet {
              
 
                <?php elseif( get_row_layout() == 'contact_form_contac_us' ): ?>
+
+
+                <style> 
+                    .contact-us .right {
+                        background-color: black;
+                    }
+
+
+                    .contact-us ._form-title::first-letter {
+                        background-color: black;
+                     }
+
+                </style>
           
                 <div class="container contact-us">
                     <div class="left">
