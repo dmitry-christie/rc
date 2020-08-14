@@ -1368,6 +1368,7 @@ margin: 0px 1em;
 
 ul {
 	list-style-type: none;
+	color: #6d6e70;
 }
 ul li:before { 
 	content:"•"; 
