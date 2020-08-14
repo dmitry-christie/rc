@@ -1366,7 +1366,9 @@ margin: 0px 1em;
 	margin-right: 1em;
 }
 
-
+ul {
+	list-style-type: none;
+}
 ul li:before { 
 	content:"•"; 
 	font-size:10pt; 
