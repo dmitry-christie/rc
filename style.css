@@ -1368,9 +1368,15 @@ margin: 0px 1em;
 	margin-right: 1em;
 }
 
-ul {
+
+
+
+.visual-editor ul {
 	list-style-type: none;
 	color: #6d6e70;
+	margin: 0px;
+	padding: 0.2em 0px;
+
 }
 .visual-editor ul li:before { 
 	content:"•"; 
