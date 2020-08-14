@@ -1803,6 +1803,15 @@ button.swiper-pagination-bullet {
                         background-color: black;
                      }
 
+
+                     .contact-us  label {
+                            display: none;
+                        }
+
+                        .contact-us  ._checkbox-radio label {
+                            display: block;
+                        }
+
                 </style>
           
                 <div class="container contact-us">
