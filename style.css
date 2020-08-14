@@ -1371,14 +1371,14 @@ margin: 0px 1em;
 
 
 
-.visual-editor ul {
+.visual-editor ul, .text-container ul {
 	list-style-type: none;
 	color: #6d6e70;
 	margin: 0px;
 	padding: 0.2em 0px;
 
 }
-.visual-editor ul li:before { 
+.text-container ul li:before, .visual-editor ul li:before { 
 	content:"•"; 
 	font-size:10pt; 
 	margin-right: 1em;
