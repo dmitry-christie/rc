@@ -1415,3 +1415,7 @@ footer .info a {
     font-family: 'Playfair Display', serif;
 
 }
+
+.form-container button {
+	margin-top: 1em;
+}
