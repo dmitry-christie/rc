@@ -1626,7 +1626,7 @@ button.swiper-pagination-bullet {
                         background-image: url('<?php the_sub_field('right-image'); ?>'); 
                     }
 
-                    .tiles<?php echo $uniqueid; ?> .left-container h3, .tiles h2, .tiles h1{
+                    .tiles<?php echo $uniqueid; ?> .left-container h3, .tiles<?php echo $uniqueid; ?> h2, .tiles<?php echo $uniqueid; ?> h1{
                         color: <?php the_sub_field('left-header-colour'); ?>; 
                     }
 
