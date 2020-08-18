@@ -1437,6 +1437,10 @@ footer .info a {
 		justify-content: center;
 	}
 
+	.text_image > div {
+		width: 90%;
+	}
+
 	.blurbs-type-1 {
 		flex-wrap: wrap;
 		justify-content: center;
@@ -1461,5 +1465,33 @@ footer .info a {
 	.tiles .left-container {
 		padding: 2em;
 	}
+
+	.tiles > div {
+		width: 100%;
+	}
+	
+	.form-block {
+		flex-direction: column;
+	}
+
+	.form-block > div {
+		width: 100%;
+	}
+
+	.contacts {
+		flex-wrap: wrap;
+	}
+
+
+	.contacts .item {
+		
+		min-width: 200px;
+	}
+
+	.menu-and-copy {
+		flex-direction: column;
+		align-items: center;
+	}
+	
 	
 }
