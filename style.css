@@ -1438,7 +1438,7 @@ footer .info a {
 	}
 
 	.text_image > div {
-		width: 90%;
+		width: 100%;
 	}
 
 	.blurbs-type-1 {
@@ -1458,6 +1458,9 @@ footer .info a {
 		flex-direction: column;
 	}
 
+	.tiles .right {
+		min-height: 400px;
+	}
 
 	
 
