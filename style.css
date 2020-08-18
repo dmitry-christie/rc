@@ -1434,5 +1434,31 @@ footer .info a {
 	.text_image {
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 	}
+
+	.blurbs-type-1 {
+		flex-wrap: wrap;
+	}
+
+	.blurbs-type-1 .separator {
+		display: none;
+	}
+
+	.blurbs-type-1 .blurb {
+		max-width: 90%;
+	}
+
+	.tiles {
+		flex-direction: column;
+	}
+
+	.tiles > div {
+		min-height: 500px;
+	}
+
+	.tiles .left-container {
+		padding: 2em;
+	}
+	
 }
