@@ -37,7 +37,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/theme/phone.png">
 					</div>
 					<div class="text">
-						<a href="tel:+351 212 386 5575"><p>+351 212 386 5575</p></a>
+						<a href="tel:+351 212 386 5575"><p>+351 93 739 5100</p></a>
 					</div>
 				</div>
 				<div class="item">

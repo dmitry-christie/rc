@@ -1428,3 +1428,11 @@ footer .info a {
 	margin-top: 1em;
 }
 
+
+
+@media (max-width: 800px) {
+	.text_image {
+		flex-direction: column;
+		align-items: center;
+	}
+}

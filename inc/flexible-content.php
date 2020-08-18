@@ -1798,11 +1798,9 @@ button.swiper-pagination-bullet {
                         background-color: black;
                     }
 
-
                     .contact-us ._form-title::first-letter {
                         background-color: black;
                      }
-
 
                      .contact-us  label {
                             display: none;
