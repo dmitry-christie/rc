@@ -1518,23 +1518,22 @@ footer .info a {
 	}
 
 	.stripes {
-		width: 100%;
+		width: 100% !important;
 	}
 
 	.page-title {
-		top: 50vh;
+		top: 50vh !important;
 	}
 
 	.home .stripes {
-		height: 100%;
-		width: 100%;
-		background-size: 100%;
-		background-repeat: no-repeat;
+		height: 100% !important;
+		width: 100% !important;
+		background-size: 100%!important ;
+		
 	}
 
 	.hero .text {
-		position: absolute;
-		left: 2em;
+		left: 2em !important;
 	}
 	
 	
