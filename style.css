@@ -1542,6 +1542,10 @@ footer .info a {
 		bottom: 0em !important;
 		padding: 10px;
 	}
+
+	html {
+		overflow: hidden;
+	}
 	
 	
 }
