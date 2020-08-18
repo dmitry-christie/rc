@@ -1458,9 +1458,8 @@ footer .info a {
 		flex-direction: column;
 	}
 
-	.tiles > div {
-		min-height: 500px;
-	}
+
+	
 
 	.tiles .left-container {
 		padding: 2em;
@@ -1494,4 +1493,21 @@ footer .info a {
 	}
 	
 	
+}
+
+
+@media (max-width: 600px) {
+	.contacts {
+		justify-content: center;
+	}
+
+	.footer-outer .info {
+		flex-direction: column;
+	}
+
+	.footer-outer .info > div {
+	
+		text-align: center;
+		width: 100%;
+	}
 }
