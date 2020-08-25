@@ -59,7 +59,7 @@ get_header();
 	</div>
 			<?php if ( is_front_page())   {?>
 				<div class="text">
-				Solid deicisions in everthing we do.
+				Solid decisions in everthing we do.
 			</div>
 				
 			<?php } else {?>
