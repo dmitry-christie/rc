@@ -1547,6 +1547,14 @@ footer .info a {
 	html {
 		overflow-x: hidden;
 	}
+
+	.page .hero {
+	  min-height: 500px;
+	}
+	.home .hero {
+		min-height: 400px;
+	}
+
 	
 	
 }
