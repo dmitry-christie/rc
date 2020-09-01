@@ -59,7 +59,7 @@ get_header();
 	</div>
 			<?php if ( is_front_page())   {?>
 				<div class="text">
-				<?php the_field("home-text-header", 'option'); ?>
+				<?php $home_text_header = get_field("home-text-header", 'option'); var_dump($home_text_header); ?>
 			</div>
 				
 			<?php } else {?>
