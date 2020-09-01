@@ -102,61 +102,9 @@
 </article><!-- #post-<?php the_ID(); ?> -->
 
 
-   <!-- Contact form -->
+<?php 
 
-             
+$stylesheet_root = get_stylesheet_directory();
+			include( $stylesheet_root . '/inc/flexible-content.php' );
 
-   <?php elseif( get_row_layout() == 'contact_form' ): ?>
-                <style>
-
-                
-                    .form-block .left {
-                        background-size: cover;
-                        background-image: url('<?php
-                            $image_left = get_sub_field("image-left");
-                            if($image_left) {
-                                the_sub_field("image-left");            
-                            } else {
-                                the_sub_field("global_image_form", "option");
-                            }
-                        ?>'); 
-                    }
-        
-                   @media (max-width: 700px) {
-                    .form-block .left {
-                            background-position: center;
-                        }
-                   }
-                </style>
-                <div class="form-block ">
-                    <div class="left">
-                       
-
-
-                        
-
-                    </div>
-                    <div class="right">
-                        <div class="form-container">
-
-                        <?php
-            $form = get_sub_field('form');
-            
-            if($form) {
-                echo apply_filters( 'the_content', $form);
-            
-            } else {
-                $global_form = get_field('global_form', 'option');
-                echo apply_filters( 'the_content', $global_form);
-
-            }
-            
-           ?>
-                        </div>
-
-                    
-                        
-                    </div>
-                </div>
-
-            <!-- END contact form -->
+?>
