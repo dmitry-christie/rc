@@ -1586,6 +1586,10 @@ footer .info a {
 	margin-bottom: 0px;
 }
 
+.archive-container .post-item {
+	margin-bottom: 1em;
+}
+
 
 .post .entry-meta {
 	font-weight: 400;
