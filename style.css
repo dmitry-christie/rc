@@ -1597,10 +1597,20 @@ footer .info a {
 
 }
 
+.flex .entry-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex .a {
+	color: #2D2925;
+}
+
 .post-item {
 	justify-content: space-between;
 }
 
 .flex .entry-content {
 	max-width: 50%;
+	margin-left: 3em;
 }

@@ -33,21 +33,22 @@ get_header();
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
-				rockcapital_posted_on();
-				?>
-			</div><!-- .entry-meta -->
+			
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="flex">
+	<div class="flex post-item">
 		<?php the_post_thumbnail( 'medium'); ?>
 
 	<div class="entry-content">
 		<?php
 		the_excerpt();
 		?>
+		<div class="entry-meta">
+				<?php
+				rockcapital_posted_on();
+				?>
+			</div><!-- .entry-meta -->
 	</div><!-- .entry-content -->
 	</div>
 
