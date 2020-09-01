@@ -104,7 +104,7 @@
 
 <?php 
 
-$stylesheet_root = get_stylesheet_directory();
-			include( $stylesheet_root . '/inc/flexible-content.php' );
+/* $stylesheet_root = get_stylesheet_directory();
+include( $stylesheet_root . '/inc/flexible-content.php' ); */
 
 ?>
