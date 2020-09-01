@@ -41,13 +41,17 @@ get_header();
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php the_post_thumbnail( 'medium'); ?>
+	<div class="flex">
+		<?php the_post_thumbnail( 'medium'); ?>
 
 	<div class="entry-content">
 		<?php
 		the_excerpt();
 		?>
 	</div><!-- .entry-content -->
+	</div>
+
+
 
 
 </article><!-- #post-<?php the_ID(); ?> -->

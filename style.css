@@ -1583,9 +1583,24 @@ footer .info a {
 	color: #2D2925;
 	text-decoration: none;
 	font-family: 'Playfair Display', serif;
+	margin-bottom: 0px;
 }
+
 
 .post .entry-meta {
 	font-weight: 400;
 	color: #2D2925;
+}
+
+.flex {
+	display: flex;
+
+}
+
+.post-item {
+	justify-content: space-between;
+}
+
+.flex .entry-content {
+	max-width: 50%;
 }
