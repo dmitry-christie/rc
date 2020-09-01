@@ -1600,15 +1600,14 @@ footer .info a {
 .flex .entry-content {
 	display: flex;
 	flex-direction: column;
+	margin-top: 0px;
 }
 
-.flex .a {
+.flex .a, flex a:visited {
 	color: #2D2925;
 }
 
-.post-item {
-	justify-content: space-between;
-}
+
 
 .flex .entry-content {
 	max-width: 50%;
