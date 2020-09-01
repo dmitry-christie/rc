@@ -21,7 +21,7 @@ get_header();
 			while ( have_posts() ) :
 				the_post(); ?>
 
-			
+<a href="<?php esc_url( get_permalink() ); ?>" rel="bookmark">
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -50,6 +50,7 @@ get_header();
 				?>
 			</div><!-- .entry-meta -->
 	</div><!-- .entry-content -->
+	</a>
 	</div>
 
 

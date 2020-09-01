@@ -9,7 +9,50 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<style>
+
+
+.stripes {
+
+	background-image: url('<?php echo get_template_directory_uri(); ?>/img/theme/LINES_ROCK.png');
+	height: 100%;
+	width: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.hero {
+	background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');
+	height: 60vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+}
+
+
+
+</style>
+
+
+	<div class="hero" >
+	<div class="stripes">
+		
+
+	</div>
+			
+				<div class="page-title">
+					<?php single_post_title(); ?>
+				</div>
+				
+			
+			
+			
+		
+</div>
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="container">
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :

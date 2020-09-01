@@ -1603,7 +1603,7 @@ footer .info a {
 	margin-top: 0px;
 }
 
-.flex .a, flex a:visited {
+.flex a, flex a:visited {
 	color: #2D2925;
 }
 
@@ -1621,4 +1621,10 @@ footer .info a {
 .entry-meta {
 	font-style: italic;
 	font-size: 0.7em;
+	color: #2D2925;
+
+}
+
+.entry-meta a {
+	color: #2D2925;
 }
