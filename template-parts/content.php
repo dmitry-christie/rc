@@ -52,8 +52,8 @@
 </div>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="container">
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
+	<header class="entry-header container">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -71,9 +71,8 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php rockcapital_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="entry-content container">
 		<?php
 		the_content(
 			sprintf(
@@ -101,3 +100,63 @@
 
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+   <!-- Contact form -->
+
+             
+
+   <?php elseif( get_row_layout() == 'contact_form' ): ?>
+                <style>
+
+                
+                    .form-block .left {
+                        background-size: cover;
+                        background-image: url('<?php
+                            $image_left = get_sub_field("image-left");
+                            if($image_left) {
+                                the_sub_field("image-left");            
+                            } else {
+                                the_sub_field("global_image_form", "option");
+                            }
+                        ?>'); 
+                    }
+        
+                   @media (max-width: 700px) {
+                    .form-block .left {
+                            background-position: center;
+                        }
+                   }
+                </style>
+                <div class="form-block ">
+                    <div class="left">
+                       
+
+
+                        
+
+                    </div>
+                    <div class="right">
+                        <div class="form-container">
+
+                        <?php
+            $form = get_sub_field('form');
+            
+            if($form) {
+                echo apply_filters( 'the_content', $form);
+            
+            } else {
+                $global_form = get_field('global_form', 'option');
+                echo apply_filters( 'the_content', $global_form);
+
+            }
+            
+           ?>
+                        </div>
+
+                    
+                        
+                    </div>
+                </div>
+
+            <!-- END contact form -->
