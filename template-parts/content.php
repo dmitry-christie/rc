@@ -104,7 +104,15 @@
 
 <?php 
 
-/* $stylesheet_root = get_stylesheet_directory();
-include( $stylesheet_root . '/inc/flexible-content.php' ); */
+
+try {
+	$stylesheet_root = get_stylesheet_directory();
+	include( $stylesheet_root . '/inc/flexible-content.php' ); 
+}
+catch(Exception $e) {
+	echo 'Message: ' . $e->getMessage();
+}
+
+
 
 ?>
