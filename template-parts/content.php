@@ -102,17 +102,55 @@
 </article><!-- #post-<?php the_ID(); ?> -->
 
 
-<?php 
+<style>
 
-
-try {
-	$stylesheet_root = get_stylesheet_directory();
-	include( $stylesheet_root . '/inc/flexible-content.php' ); 
+                
+.form-block .left {
+	background-size: cover;
+	background-image: url('<?php
+		$image_left = get_field("image-left");
+		if($image_left) {
+			the_field("image-left");            
+		} else {
+			the_field("global_image_form", "option");
+		}
+	?>'); 
 }
-catch(Exception $e) {
-	echo 'Message: ' . $e->getMessage();
+
+@media (max-width: 700px) {
+.form-block .left {
+		background-position: center;
+	}
 }
+</style>
+<div class="form-block ">
+<div class="left">
+   
 
 
+	
+
+</div>
+<div class="right">
+	<div class="form-container">
+
+	<?php
+$form = get_field('form');
+
+if($form) {
+echo apply_filters( 'the_content', $form);
+
+} else {
+$global_form = get_field('global_form', 'option');
+echo apply_filters( 'the_content', $global_form);
+
+}
 
 ?>
+	</div>
+
+
+	
+</div>
+</div>
+
