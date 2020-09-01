@@ -1575,3 +1575,17 @@ footer .info a {
 		width: 100%;
 	}
 }
+
+
+.archive-container .entry-title a {
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #2D2925;
+	text-decoration: none;
+	font-family: 'Playfair Display', serif;
+}
+
+.post .entry-meta {
+	font-weight: 400;
+	color: #2D2925;
+}
