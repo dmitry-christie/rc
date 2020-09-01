@@ -59,7 +59,7 @@ get_header();
 	</div>
 			<?php if ( is_front_page())   {?>
 				<div class="text">
-				Solid decisions in everthing we do.
+				<?php the_field("home-text-header", options); ?>
 			</div>
 				
 			<?php } else {?>
