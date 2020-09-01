@@ -1613,3 +1613,12 @@ footer .info a {
 	max-width: 50%;
 	margin-left: 3em;
 }
+
+.flex .entry-content p {
+	margin-top: 0px;
+}
+
+.entry-meta {
+	font-style: italic;
+	font-size: 0.7em;
+}
