@@ -1633,4 +1633,14 @@ footer .info a {
 	color: #2D2925;
 }
 
-
+@media (max-width: 800px) {
+	.archive-container .flex {
+		flex-direction: column;
+	
+	}
+	
+	.flex .entry-content {
+		margin-left: 0em;
+		max-width: 100%;
+	}
+}
