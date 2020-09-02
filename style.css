@@ -1643,4 +1643,21 @@ footer .info a {
 		margin-left: 0em;
 		max-width: 100%;
 	}
+	
+	.post .page-title {
+		position: absolute;
+		top: 40vh;
+		left: 0px;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		color: white;
+		font-weight: 300;
+		font-size: 1.9em;
+		text-align: center;
+		font-family: 'Playfair Display', serif;
+	}
+	
+	
+	
 }
