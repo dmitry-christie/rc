@@ -1789,46 +1789,28 @@ button.swiper-pagination-bullet {
 
             <?php elseif( get_row_layout() == 'projects' ): ?>
 
-                <div class="projects">
+               
 
-                        <?php /*
-                    $loop = new WP_Query(
-                        array(
-                            'post_type' => 'projects',
-                            'posts_per_page' => 50 
-                        )
-                    );
-                    while ( $loop->have_posts() ) : $loop->the_post(); 
-                    ?>
-                    <div class="project">   
-                    <div class="img">
-                        <img src="<?php echo get_the_post_thumbnail( $the_query->ID, array( 500, 400) ); ?>" alt="">
-                    </div>
-                    <div class="secription">
-                        <?php the_excerpt(); ?>
-                    </div>
-                </div>
+                  
+                    <div class="projects container">
+                        <?php
+                        $loop = new WP_Query(
+                            array(
+                                'post_type' => 'project', 
+                                'posts_per_page' => 50 
+                            )
+                        );
+                        while ( $loop->have_posts() ) : $loop->the_post();
+                        // The content you want to loop goes in here:
+                        ?>
                     
-                <?php */?>
-
-                    <?php
-                    $loop = new WP_Query(
-                        array(
-                            'post_type' => 'project', 
-                            'posts_per_page' => 50 
-                        )
-                    );
-                    while ( $loop->have_posts() ) : $loop->the_post();
-                    // The content you want to loop goes in here:
-                    ?>
-                    
-                    <div class="col-sm-4">
-                   <?php the_title();?>
+                            <div class="project">
+                                <?php the_title();?>
+                            </div>   
+                        <?php endwhile;
+                        wp_reset_postdata();
+                        ?>
                     </div>
-                    
-                    <?php endwhile;
-                    wp_reset_postdata();
-                    ?>
                    
                
 

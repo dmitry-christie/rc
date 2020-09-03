@@ -1661,3 +1661,13 @@ footer .info a {
 	
 	
 }
+
+
+.projects {
+	display: flex;
+	justify-content: space-between;
+}
+
+.project {
+	flex: 0 1 200px;
+}
