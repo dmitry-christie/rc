@@ -1817,7 +1817,8 @@ button.swiper-pagination-bullet {
          <?php elseif( get_row_layout() == 'profile' ): ?>
                   
                   <div class="container">
-                  <?php 	$user_id = get_current_user_id(); ?>
+                  <?php 	$user_id = wp_get_current_user();
+                  var_dump($user_id); ?>
                   <p>Name: <?php the_field('name', $user_id); ?></p>
                   <p>Phone Number: <?php the_field('phone_number', $user_id); ?></p>
 
