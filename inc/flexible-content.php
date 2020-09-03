@@ -1785,6 +1785,30 @@ button.swiper-pagination-bullet {
 
             <!-- END contact form -->
 
+            <!-- Projects -->
+
+            <?php elseif( get_row_layout() == 'projects' ): ?>
+
+                <div class="projects">
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                    <div class="project">   
+                        lorem ipsum
+                    </div>
+                </div>
 
                <!-- Contact form (contact us) -->
 
@@ -1832,6 +1856,8 @@ button.swiper-pagination-bullet {
                         
                     </div>
                 </div>
+                <?php $k++; ?>
+
 
             <!-- END contact form -->
 
