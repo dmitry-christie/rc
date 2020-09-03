@@ -1819,12 +1819,12 @@ button.swiper-pagination-bullet {
                   <div class="container">
                   <?php $current_user = wp_get_current_user(); ?>  
 
-                  <p>Name: <?php the_field('name', 'user_' . $current_user->ID); ?></p>
-                  <p>Phone Number: <?php the_field('phone_number', 'user_' . $current_user->ID); ?></p>
+                  <p><strong>Name:</strong> <?php the_field('name', 'user_' . $current_user->ID); ?></p>
+                  <p><strong>Phone Number:</strong> <?php the_field('phone_number', 'user_' . $current_user->ID); ?></p>
 
-                  <p>Address: <?php the_field('address', 'user_' . $current_user->ID); ?></p>
+                  <p><strong>Address:</strong> <?php the_field('address', 'user_' . $current_user->ID); ?></p>
 
-                  <p>Open positions: <?php the_field('investments', 'user_' . $current_user->ID); ?></p>
+                  <p><strong>Open positions:</strong> <?php the_field('investments', 'user_' . $current_user->ID); ?></p>
 
                   </div>
        <!-- END Profile -->
