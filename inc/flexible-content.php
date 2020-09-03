@@ -1790,25 +1790,28 @@ button.swiper-pagination-bullet {
             <?php elseif( get_row_layout() == 'projects' ): ?>
 
                 <div class="projects">
+
+                        <?php
+                    $loop = new WP_Query(
+                        array(
+                            'post_type' => 'projects',
+                            'posts_per_page' => 50 
+                        )
+                    );
+                    while ( $loop->have_posts() ) : $loop->the_post(); 
+                    ?>
                     <div class="project">   
-                        lorem ipsum
+                    <div class="img">
+                        <img src="<?php echo get_the_post_thumbnail( $the_query->ID, array( 500, 400) ); ?>" alt="">
                     </div>
-                    <div class="project">   
-                        lorem ipsum
-                    </div>
-                    <div class="project">   
-                        lorem ipsum
-                    </div>
-                    <div class="project">   
-                        lorem ipsum
-                    </div>
-                    <div class="project">   
-                        lorem ipsum
-                    </div>
-                    <div class="project">   
-                        lorem ipsum
+                    <div class="secription">
+                        <?php the_excerpt(); ?>
                     </div>
                 </div>
+                    
+                    
+                   
+               
 
                <!-- Contact form (contact us) -->
 
