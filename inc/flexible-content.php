@@ -1791,7 +1791,7 @@ button.swiper-pagination-bullet {
 
                 <div class="projects">
 
-                        <?php
+                        <?php /*
                     $loop = new WP_Query(
                         array(
                             'post_type' => 'projects',
@@ -1809,7 +1809,26 @@ button.swiper-pagination-bullet {
                     </div>
                 </div>
                     
+                <?php */?>
+
+                    <?php
+                    $loop = new WP_Query(
+                        array(
+                            'post_type' => 'projects', 
+                            'posts_per_page' => 50 
+                        )
+                    );
+                    while ( $loop->have_posts() ) : $loop->the_post();
+                    // The content you want to loop goes in here:
+                    ?>
                     
+                    <div class="col-sm-4">
+                    My column content
+                    </div>
+                    
+                    <?php endwhile;
+                    wp_reset_postdata();
+                    ?>
                    
                
 
