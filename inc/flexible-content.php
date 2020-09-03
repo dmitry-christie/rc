@@ -1823,7 +1823,7 @@ button.swiper-pagination-bullet {
                     ?>
                     
                     <div class="col-sm-4">
-                    My column content
+                   <?php the_title();?>
                     </div>
                     
                     <?php endwhile;
