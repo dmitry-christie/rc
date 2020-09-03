@@ -1812,22 +1812,22 @@ button.swiper-pagination-bullet {
 
 
 
-         <!-- Projects -->
+         <!-- Profile -->
 
          <?php elseif( get_row_layout() == 'profile' ): ?>
                   
                   <div class="container">
-                  <?php 	$user_id = wp_get_current_user();
-                  var_dump($user_id); ?>
-                  <p>Name: <?php the_field('name', $user_id); ?></p>
-                  <p>Phone Number: <?php the_field('phone_number', $user_id); ?></p>
+                  <?php $current_user = wp_get_current_user(); ?>  
 
-                  <p>Address: <?php the_field('address', $user_id); ?></p>
+                  <p>Name: <?php the_field('name', 'user_' . $current_user->ID); ?></p>
+                  <p>Phone Number: <?php the_field('phone_number', 'user_' . $current_user->ID); ?></p>
 
-                  <p>Open positions: <?php the_field('investments', $user_id); ?></p>
+                  <p>Address: <?php the_field('address', 'user_' . $current_user->ID); ?></p>
+
+                  <p>Open positions: <?php the_field('investments', 'user_' . $current_user->ID); ?></p>
 
                   </div>
-       <!-- END Projects -->
+       <!-- END Profile -->
 
                
 
