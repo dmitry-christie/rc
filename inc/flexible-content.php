@@ -1814,7 +1814,7 @@ button.swiper-pagination-bullet {
                     <?php
                     $loop = new WP_Query(
                         array(
-                            'post_type' => 'projects', 
+                            'post_type' => 'project', 
                             'posts_per_page' => 50 
                         )
                     );
