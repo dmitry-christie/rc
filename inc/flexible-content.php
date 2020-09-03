@@ -1788,9 +1788,6 @@ button.swiper-pagination-bullet {
             <!-- Projects -->
 
             <?php elseif( get_row_layout() == 'projects' ): ?>
-
-               
-
                   
                     <div class="projects container">
                         <?php

@@ -37,8 +37,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 		<div class="lanaguage-switcher"></div>
 		<div class="investor-login">
-		<a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" alt="<?php esc_attr_e( 'Login', 'textdomain' ); ?>">
-Investor Login</a>
+		<?php if (is_user_logged_in()): ?>
+			<a href="<?php echo esc_url( wp_login_url( get_permalink() ) ); ?>" alt="<?php esc_attr_e( 'Login', 'textdomain' ); ?>">Investor Login</a>
+		<?php else: ?>
+			<a href="<?php $url = home_url(); echo $url . '/profile/';?>" alt="Porfile URL">Investor Login</a> | <a href="<?php echo wp_logout_url( home_url() ); ?>" alt="Porfile URL">Log Out</a>
+		<?php endif; ?>
+
+
+		
 		</div>
 	</div>
 </div>
