@@ -1818,12 +1818,12 @@ button.swiper-pagination-bullet {
                   
                   <div class="container">
                   <?php 	$user_id = get_current_user_id(); ?>
-                  <p>Name: <?php the_field('name', '$user_id'); ?></p>
-                  <p>Phone Number: <?php the_field('phone_number', '$user_id'); ?></p>
+                  <p>Name: <?php the_field('name', $user_id); ?></p>
+                  <p>Phone Number: <?php the_field('phone_number', $user_id); ?></p>
 
-                  <p>Address: <?php the_field('address', '$user_id'); ?></p>
+                  <p>Address: <?php the_field('address', $user_id); ?></p>
 
-                  <p>Open positions: <?php the_field('investments', '$user_id'); ?></p>
+                  <p>Open positions: <?php the_field('investments', $user_id); ?></p>
 
                   </div>
        <!-- END Projects -->
