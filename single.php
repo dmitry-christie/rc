@@ -12,15 +12,21 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-	<?php
+		<?php
 		while ( have_posts() ) :
 			the_post();
 
+			get_template_part( 'template-parts/content', get_post_type() );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			$stylesheet_root = get_stylesheet_directory();
+			if ( is_singular( 'project' ) ) {
+				$stylesheet_root = get_stylesheet_directory();
 			include( $stylesheet_root . '/inc/flexible-content.php' );
+			} else {
+				get_template_part( 'template-parts/content', get_post_type() );
 
+			}
+
+		
 		endwhile; // End of the loop.
 		?>
 
