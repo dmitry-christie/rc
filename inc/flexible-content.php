@@ -1802,7 +1802,11 @@ button.swiper-pagination-bullet {
                         ?>
                     
                             <div class="project">
-                                <?php the_title();?>
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                    <img src="<?php echo get_the_post_thumbnail_url( $the_query->ID, array( 500, 400) ); ?>">
+
+                                    <h4><?php the_title(); ?></h4>
+                                </a> 
                             </div>   
                         <?php endwhile;
                         wp_reset_postdata();
@@ -1831,7 +1835,7 @@ button.swiper-pagination-bullet {
                   $price_of_share = get_field('price_of_share', 'option');
 
                   if ($open_positions && $price_of_share):?>
-                  <p><strong>Net Asset Value:</strong> <?php echo $open_positions * $price_of_share;?>
+                  <p><strong>Net Asset Value:</strong> <?php echo $open_positions * $price_of_share;?> EUR
                 
                   
                   </p>
