@@ -16,11 +16,10 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', get_post_type() );
 
 			if ( is_singular( 'project' ) ) {
 				$stylesheet_root = get_stylesheet_directory();
-			include( $stylesheet_root . '/inc/flexible-content.php' );
+				include( $stylesheet_root . '/inc/flexible-content.php' );
 			} else {
 				get_template_part( 'template-parts/content', get_post_type() );
 
