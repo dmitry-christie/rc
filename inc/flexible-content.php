@@ -1825,6 +1825,19 @@ button.swiper-pagination-bullet {
                   <p><strong>Address:</strong> <?php the_field('address', 'user_' . $current_user->ID); ?></p>
 
                   <p><strong>Open positions:</strong> <?php the_field('investments', 'user_' . $current_user->ID); ?></p>
+                  <p><strong>Price of share:</strong> <?php the_field('price_of_share', 'option'); ?></p>
+                   <?php 
+                  $open_positions = get_field('investments', 'user_' . $current_user->ID); 
+                  $price_of_share = get_field('price_of_share', 'option');
+
+                  if ($open_positions && $price_of_share):?>
+                  <p><strong>Net Asset Value:</strong> <?php echo $open_positions * $price_of_share;?>
+                
+                  
+                  </p>
+                  <?php endif;?>
+
+                  
 
                   </div>
        <!-- END Profile -->
