@@ -190,24 +190,32 @@ if( function_exists('acf_add_options_page') ) {
 
 add_filter('show_admin_bar', '__return_false');
 
+/* make custom posts private */
 
-add_action( 'post_submitbox_misc_actions' , 'wpse118970_change_visibility_metabox_value' );
-function wpse118970_change_visibility_metabox_value(){
-    global $post;
-    if ($post->post_type != 'itsme_private_posts')
-        return;
-    $post->post_password = '';
-    $visibility = 'private';
-    $visibility_trans = __('Private');
-    ?>
-    <script type="text/javascript">
-        (function($){
-            try {
-                $('#post-visibility-display').text('<?php echo $visibility_trans; ?>');
-                $('#hidden-post-visibility').val('<?php echo $visibility; ?>');
-                $('#visibility-radio-<?php echo $visibility; ?>').attr('checked', true);
-            } catch(err){}
-        }) (jQuery);
-    </script>
-    <?php
+add_action( 'save_post', 'check_type_values', 10, 2 );
+
+function check_type_values( $post_id, $post ) {
+
+    if( $post->post_type )
+        switch( $post->post_type ) {
+            case 'project':
+                $post->post_status = 'private';
+                $post->post_password = ( '' == $post->post_password ) ? 'some_default_when_no_password' : $post->post_password;
+            break;
+        }   
+    return;
+}
+
+add_filter( 'default_content', 'set_default_values', 10, 2 );
+
+function set_default_values( $post_content, $post ) {
+
+    if( $post->post_type )
+        switch( $post->post_type ) {
+            case 'project':
+                $post->post_status = 'private';
+                $post->post_password = 'some_default_password';
+            break;
+        }
+    return $post_content;
 }
