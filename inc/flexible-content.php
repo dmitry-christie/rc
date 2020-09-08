@@ -1788,7 +1788,12 @@ button.swiper-pagination-bullet {
             <!-- Projects -->
 
             <?php elseif( get_row_layout() == 'projects' ): ?>
-                  
+
+
+                    <?php $title = get_sub_field('title'); if($title): ?>
+                        <h2 class="section-header sm-gold-line"> <?php echo $title; ?> </h2>
+                    <?php endif; ?>
+
                     <div class="projects container">
                         <?php
                         $loop = new WP_Query(
