@@ -1671,3 +1671,7 @@ footer .info a {
 .project {
 	flex: 0 1 200px;
 }
+
+.info-col img {
+	margin: 1em 0px;
+}
