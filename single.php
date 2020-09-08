@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<style>
+<!--<style>
 
 
 .stripes {
@@ -33,7 +33,7 @@ get_header();
 
 
 
-</style>
+</style> 
 
 
 	<div class="hero" >
@@ -50,7 +50,7 @@ get_header();
 			
 			
 		
-</div>
+</div>-->
 
 	<main id="primary" class="site-main">
 
