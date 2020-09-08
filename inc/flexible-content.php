@@ -1791,7 +1791,11 @@ button.swiper-pagination-bullet {
 
 
                     <?php $title = get_sub_field('title'); if($title): ?>
-                        <h2 class="section-header sm-gold-line"> <?php echo $title; ?> </h2>
+                        <div class="container">
+                            <h2 class="section-header sm-gold-line"> 
+                                <?php echo $title; ?> 
+                            </h2>
+                        </div>
                     <?php endif; ?>
 
                     <div class="projects container">
