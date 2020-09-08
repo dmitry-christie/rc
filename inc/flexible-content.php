@@ -247,7 +247,13 @@
 
                                     <div class="blurb txt-center">
                                         <img src="<?php $icon = get_sub_field('icon'); echo get_template_directory_uri() . '/img/ICONS/ROCK-ICON-' . $icon . '.png'; ?>">
-                                        <span> <?php the_sub_field('text'); ?></span>
+                                        <?php if (get_sub_field('header')):?>
+                                            <h3> <?php the_sub_field('header'); ?></h3>
+                                        <?php endif; ?>
+                                        <?php if (get_sub_field('text')):?>
+                                            <span> <?php the_sub_field('text'); ?></span>
+                                        <?php endif; ?>
+
                                     </div>
                                     <?php $k++; ?>
                                     <div id="separator<?php echo $k; ?>" class="separator"></div>
@@ -263,9 +269,12 @@
                                     </style>
                                     
                             </div>
-                            <div class="container button-container">
-                                <a href="<?php the_field('button_url'); ?>"><div class="button button-blurbs"><?php $button_text = get_field('button_text'); if($button_text) { echo $button_text;} else { echo 'Read More'; } ?></div></a>
-                            </div>
+
+                            <?php if (get_sub_field('enable_button')):?>
+                                <div class="container button-container">
+                                    <a href="<?php the_field('button_url'); ?>"><div class="button button-blurbs"><?php $button_text = get_field('button_text'); if($button_text) { echo $button_text;} else { echo 'Read More'; } ?></div></a>
+                                </div>
+                            <?php endif; ?>
                         <?php endif; ?>
             
                 <?php                    $add_grey_padding = get_sub_field('add_grey_padding');
