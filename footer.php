@@ -28,8 +28,8 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/theme/hours.png">
 					</div>
 					<div class="text">
-						<p>Mon - Sat: 8am - 6pm</p>
-						<p>Sunday:  Closed</p>
+						<p>Mon - Fri: 8am - 6pm</p>
+						<p>Sat-Sun:  Closed</p>
 					</div>
 				</div>
 				<div class="item">
@@ -37,7 +37,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/theme/phone.png">
 					</div>
 					<div class="text">
-						<a href="tel:+351 212 386 5575"><p>+351 93 739 5100</p></a>
+						<a href="tel:+351 212 386 5575"><p>+351 21 137 2000</p></a>
 					</div>
 				</div>
 				<div class="item">
@@ -59,7 +59,6 @@
 
 					<img src="<?php echo get_template_directory_uri(); ?>/img/theme/ROCK-LOGO-FOOTER.png">
 
-					<p class="mini-header">ROCK CAPITAL INVESTMENTS RCI</p>
 
 					<p>CMVM Registration 1614 | <a target="_blank" href="https://rockcapital.pt/FIN_ROCK_CAPITAL_ENG_4.pdf">Download SI Sheet</a></p>
 					<p>ISIN Cat A: PTLCNMIM0000</p>
@@ -70,10 +69,9 @@
 
 					<img src="<?php echo get_template_directory_uri(); ?>/img/theme/LINCE-LOGO-FOOTER.png">
 
-					<p class="mini-header">LINCE CAPITAL, SCR, S.A</p>
 
-					<p>Avenida Duarte Pacheco, Torre II - 17.°</p>
-					<p>Andar, Sala G, 1070-102 Lisboa</p>
+					<p>Avenida Duarte Pacheco, Torre II - 17.°, Sala G</p>
+					<p>Andar, 1070-102 Lisboa</p>
 
 					</div>
 				</div>
