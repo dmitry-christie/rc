@@ -19,7 +19,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/theme/address.png">
 					</div>
 					<div class="text">
-						<p>Av. Engenheiro Duarte Pacheco,</p>
+						<p>Av. Engenheiro Duarte Pacheco, Sala G</p>
 						<p>Torre 2 - 17 Piso • Lisboa</p>
 					</div>
 				</div>
@@ -70,8 +70,8 @@
 					<img src="<?php echo get_template_directory_uri(); ?>/img/theme/LINCE-LOGO-FOOTER.png">
 
 
-					<p>Avenida Duarte Pacheco, Torre II - 17.°, Sala G</p>
-					<p>Andar, 1070-102 Lisboa</p>
+					<p>Avenida Duarte Pacheco, Torre II - 17.° Sala G</p>
+					<p>Andar, Sala G, 1070-102 Lisboa</p>
 
 					</div>
 				</div>
