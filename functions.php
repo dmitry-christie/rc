@@ -219,3 +219,24 @@ function set_default_values( $post_content, $post ) {
         }
     return $post_content;
 }
+
+
+function my_login_redirect( $redirect_to, $request, $user ) {
+	//is there a user to check?
+	
+	$redirect_to = 'https://rockcapital.pt/dashboard/';
+
+    if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+        //check for admins
+        if ( in_array( 'investor', $user->roles ) ) {
+            // redirect them to the default place
+            return $redirect_to;
+        } else {
+            return $redirect_to;
+        }
+    } else {
+        return $redirect_to;
+    }
+}
+ 
+add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
