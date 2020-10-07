@@ -67,7 +67,7 @@
 					</div>
 					<div class="info-col">
 
-					<img src="<?php echo get_template_directory_uri(); ?>/img/theme/LINCE-LOGO-FOOTER.png">
+					<a href="https://www.lince-capital.com/en/"><img src="<?php echo get_template_directory_uri(); ?>/img/theme/LINCE-LOGO-FOOTER.png"></a>
 
 
 					<p>Avenida Duarte Pacheco, Torre II - 17.° Sala G</p>
