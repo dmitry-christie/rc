@@ -119,20 +119,16 @@ function SetCookie(c_name,value,expiredays)
 	}
 
 
-	$(document).ready(function () {
+	(function() {
+  "use strict";
 
-$('#field_70Referral').click(function () {
-	if ($(this).attr("value") == true) {
-		$("._field71").hide('slow');
-	}
-	if ($(this).attr("value") == false) {
-		$("._field71").show('slow');
+    document.querySelector("#field_70Referral").addEventListener("change", function() {
+        alert("checked radio 1");
+    });
 
-	}
-});
+   
 
-$('#field_70Referral]').trigger('click');  // trigger the event
-});
+})();
 
 
 </script>
