@@ -117,6 +117,24 @@ function SetCookie(c_name,value,expiredays)
 		document.cookie=c_name+ "=" +escape(value)+
 		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
 	}
+
+
+	$(document).ready(function () {
+
+$('#field_70Referral').click(function () {
+	if ($(this).attr("value") == true) {
+		$("._field71").hide('slow');
+	}
+	if ($(this).attr("value") == false) {
+		$("._field71").show('slow');
+
+	}
+});
+
+$('#field_70Referral]').trigger('click');  // trigger the event
+});
+
+
 </script>
 </body>
 </html>

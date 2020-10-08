@@ -1103,6 +1103,10 @@ textarea {
 }
 
 
+.form-container label {
+	color: white !important;
+}
+
 .form-container ._checkbox-radio {
 	display: flex;
 	align-items: center;
@@ -1674,4 +1678,8 @@ footer .info a {
 
 .info-col img {
 	margin: 1em 0px;
+}
+
+._form-branding {
+	display: none;
 }

@@ -1920,6 +1920,10 @@ button.swiper-pagination-bullet {
                         width: 80% !important;
                         margin: 0 auto !important;
                     }
+
+                    .contact-us label {
+                        display: block;
+                    }
                     </style>
 
                     <?php endif; ?>
