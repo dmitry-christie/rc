@@ -1897,13 +1897,24 @@ button.swiper-pagination-bullet {
                 </style>
           
                 <div class="container contact-us">
+
+                <?php 
+
+                    $Text_left = get_sub_field('Text-left');
+                    if(strlen($Text_left) > 3):?>
                     <div class="left">
-                       <?php the_sub_field('Text-left'); ?>
+                       <?php 
+                       
+                       
+                       
+                       the_sub_field('Text-left'); ?>
 
                       
                         
 
                     </div>
+
+                    <?php endif; ?>
                     <div class="right">
                         <div class="form-container">
                             <?php $form = get_sub_field('form');
