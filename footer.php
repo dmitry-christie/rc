@@ -123,7 +123,8 @@ function SetCookie(c_name,value,expiredays)
   "use strict";
 
     document.querySelector("#field_70Referral").addEventListener("change", function() {
-        alert("checked radio 1");
+		stylesheet.insertRule("._field71 { display: block;}", 0);
+		stylesheet.insertRule("._field72 { display: block;}", 0);
     });
 
    

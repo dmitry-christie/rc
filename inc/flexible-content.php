@@ -1924,6 +1924,10 @@ button.swiper-pagination-bullet {
                     .contact-us label {
                         display: block;
                     }
+
+                    ._field71, _field72 {
+                        display: none;
+                    }
                     </style>
 
                     <?php endif; ?>
