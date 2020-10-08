@@ -1680,6 +1680,6 @@ footer .info a {
 	margin: 1em 0px;
 }
 
-._form-branding {
+._form-branding, ._marketing-by {
 	display: none !important;
 }

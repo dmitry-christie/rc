@@ -124,6 +124,10 @@ function SetCookie(c_name,value,expiredays)
 
     document.querySelector("#field_70Referral").addEventListener("change", function() {
 		console.log('clicked');
+
+		var selector = document.getElementsByClassName('_field71');
+		selector.style.display = "block";
+
 		var field71 = document.getElementsByClassName("_field71");
 		field71.style.display = "block";
 		var field72 = document.getElementsByClassName("_field72");
