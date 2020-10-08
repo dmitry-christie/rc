@@ -123,8 +123,12 @@ function SetCookie(c_name,value,expiredays)
   "use strict";
 
     document.querySelector("#field_70Referral").addEventListener("change", function() {
-		stylesheet.insertRule("._field71 { display: block;}", 0);
-		stylesheet.insertRule("._field72 { display: block;}", 0);
+
+		var el = document.getElementsByClassName(._field71);
+		el.style.display = "block";
+		var el2 = document.getElementsByClassName(._field72);
+  		el2.style.display = "block";
+		
     });
 
    

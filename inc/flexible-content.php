@@ -1925,7 +1925,7 @@ button.swiper-pagination-bullet {
                         display: block;
                     }
 
-                    ._field71, _field72 {
+                    ._field71, ._field72 {
                         display: none;
                     }
                     </style>
