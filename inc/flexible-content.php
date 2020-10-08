@@ -1871,71 +1871,67 @@ button.swiper-pagination-bullet {
          <?php elseif( get_row_layout() == 'pop-up' ): ?>
 
             <style>
-            #popup-box {
-            display: none;
-            padding: 0 20px;
-            }
-            /* some styling */
-            #popup-box form { padding: 20px 0; }
+          .cookie-overlay {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background: #fff;
+  z-index: 2051;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 6px;
 
-            #popup-box p { text-align: center; font-family: arial; }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
-            #popup-box button {
-            color: #FFF;
-            background-color: #000;
-            border: 0;
-            padding: 10px;
-            margin-top: 10px;
-            }
+  > div:first-child {
+    width: 458px;
+  }
 
-            #popup-box button:hover {
-            color: #88c040;
-            }
+  a {
+    text-decoration: underline;
+  }
 
-            #popup-box input {
-            height: 45px;
-            width: 450px;
-            margin: 5px 0 0 0;
-            padding: 5px;
-            }
+  .close-cookies {
+    cursor: pointer;
+  }
 
+  @include media-breakpoint-down(md) {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+
+    > div:first-child {
+      width: auto;
+    }
+  }
+}
             </style>                                
-            <a href="#popup-box" id="pop" class="fancybox" rel="group"></a>
-            <div id="popup-box">
-            <form>
-                <p>Sign Up To Our Newsletter </p>
-                <input type="email" id="email" name="email" placeholder="Enter Your Email">
-                <br/>
-                <input type="text" id="name" name="name" placeholder="Enter Your First Name">
-                <br/>
-                <button type="submit" value="submit" id="submit" value="submit">SIGN ME UP!</button>
-            </form>
-            </div>
+            <div class="cookie-overlay p-4 d-none">
+                <div class="d-flex">
+                    <div class="mr-3">By clicking the "Accept" button below, you agree to our <%= link_to 'Cookie Policy', cookies_url, target: '_blank' %>.</div>
+                    <%= image_tag  "close.png", height: '21', class: 'close-cookies' %>
+                </div>
+                <button class="btn btn-primary mt-3 accept-cookies">Accept</button>
+                </div>
 
             <script>
-            $(document).ready(function() {
+           // cookie policy
+                $(document).on('ready', function() {
+                if (document.cookie.indexOf("accepted_cookies=") < 0) {
+                    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
+                }
 
-            var active = Cookies.get('active');
-            if (active == 'yes') {
-            return false; // cookie active do nothing
-            } else { //trigger popup and set a cookie
-            setTimeout(function() {
-                $(".fancybox").eq(0).trigger('click');
-            }, 500);
-            $(".fancybox")
-                .attr('rel', 'group')
-                .fancybox({
-                padding: 0,
-                width: 530,
-                height: 550,
-                scrolling: 'auto'
-                });
-            }
-            Cookies.set('active', 'yes', {
-            expires: 1 // the number of days cookie  will be effective
-            });
+                $('.accept-cookies').on('click', function() {
+                    document.cookie = "accepted_cookies=yes;"
+                    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
+                })
 
-            });
+                // expand depending on your needs
+                $('.close-cookies').on('click', function() {
+                    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
+                })
+                })
             </script>
 
        <!-- END Profile -->
