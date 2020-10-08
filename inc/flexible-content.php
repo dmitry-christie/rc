@@ -1864,6 +1864,82 @@ button.swiper-pagination-bullet {
                   </div>
        <!-- END Profile -->
 
+
+
+         <!-- Profile -->
+
+         <?php elseif( get_row_layout() == 'pop-up' ): ?>
+
+            <style>
+            #popup-box {
+            display: none;
+            padding: 0 20px;
+            }
+            /* some styling */
+            #popup-box form { padding: 20px 0; }
+
+            #popup-box p { text-align: center; font-family: arial; }
+
+            #popup-box button {
+            color: #FFF;
+            background-color: #000;
+            border: 0;
+            padding: 10px;
+            margin-top: 10px;
+            }
+
+            #popup-box button:hover {
+            color: #88c040;
+            }
+
+            #popup-box input {
+            height: 45px;
+            width: 450px;
+            margin: 5px 0 0 0;
+            padding: 5px;
+            }
+
+            </style>                                
+            <a href="#popup-box" id="pop" class="fancybox" rel="group"></a>
+            <div id="popup-box">
+            <form>
+                <p>Sign Up To Our Newsletter </p>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                <br/>
+                <input type="text" id="name" name="name" placeholder="Enter Your First Name">
+                <br/>
+                <button type="submit" value="submit" id="submit" value="submit">SIGN ME UP!</button>
+            </form>
+            </div>
+
+            <script>
+            $(document).ready(function() {
+
+            var active = Cookies.get('active');
+            if (active == 'yes') {
+            return false; // cookie active do nothing
+            } else { //trigger popup and set a cookie
+            setTimeout(function() {
+                $(".fancybox").eq(0).trigger('click');
+            }, 500);
+            $(".fancybox")
+                .attr('rel', 'group')
+                .fancybox({
+                padding: 0,
+                width: 530,
+                height: 550,
+                scrolling: 'auto'
+                });
+            }
+            Cookies.set('active', 'yes', {
+            expires: 1 // the number of days cookie  will be effective
+            });
+
+            });
+            </script>
+
+       <!-- END Profile -->
+
                
 
                <!-- Contact form (contact us) -->
