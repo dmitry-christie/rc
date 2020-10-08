@@ -1914,6 +1914,14 @@ button.swiper-pagination-bullet {
 
                     </div>
 
+                    <?php else: ?>
+                    <style>
+                    .contact-us > div {
+                        width: 80% !important;
+                        margin: 0 auto !important;
+                    }
+                    </style>
+
                     <?php endif; ?>
                     <div class="right">
                         <div class="form-container">
