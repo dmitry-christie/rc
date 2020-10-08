@@ -1866,75 +1866,7 @@ button.swiper-pagination-bullet {
 
 
 
-         <!-- Profile -->
-
-         <?php elseif( get_row_layout() == 'pop-up' ): ?>
-
-            <style>
-          .cookie-overlay {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-  background: #fff;
-  z-index: 2051;
-  line-height: 20px;
-  font-size: 14px;
-  border-radius: 6px;
-
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-
-  > div:first-child {
-    width: 458px;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  .close-cookies {
-    cursor: pointer;
-  }
-
-  @include media-breakpoint-down(md) {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 0;
-
-    > div:first-child {
-      width: auto;
-    }
-  }
-}
-            </style>                                
-            <div class="cookie-overlay p-4 d-none">
-                <div class="d-flex">
-                    <div class="mr-3">By clicking the "Accept" button below, you agree to our <%= link_to 'Cookie Policy', cookies_url, target: '_blank' %>.</div>
-                    <%= image_tag  "close.png", height: '21', class: 'close-cookies' %>
-                </div>
-                <button class="btn btn-primary mt-3 accept-cookies">Accept</button>
-                </div>
-
-            <script>
-           // cookie policy
-                $(document).on('ready', function() {
-                if (document.cookie.indexOf("accepted_cookies=") < 0) {
-                    $('.cookie-overlay').removeClass('d-none').addClass('d-block');
-                }
-
-                $('.accept-cookies').on('click', function() {
-                    document.cookie = "accepted_cookies=yes;"
-                    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-                })
-
-                // expand depending on your needs
-                $('.close-cookies').on('click', function() {
-                    $('.cookie-overlay').removeClass('d-block').addClass('d-none');
-                })
-                })
-            </script>
-
-       <!-- END Profile -->
+         
 
                
 
