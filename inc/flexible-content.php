@@ -1928,6 +1928,15 @@ button.swiper-pagination-bullet {
                     ._field71, ._field72 {
                         display: none;
                     }
+
+                    ._checkbox-radio label {
+                        color: white;
+                    }
+
+
+                    ._form-branding, ._marketing-by {
+                        display: none !important;
+                    }
                     </style>
 
                     <?php endif; ?>
