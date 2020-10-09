@@ -130,6 +130,26 @@ function SetCookie(c_name,value,expiredays)
 
 		  
 		
+	});
+	
+	document.querySelector("field_70Wealth Manager").addEventListener("change", function() {
+		console.log('clicked');
+
+		document.getElementsByClassName("_field71")[0].style.display = "none";
+		document.getElementsByClassName("_field72")[0].style.display = "none";
+
+		  
+		
+	});
+	
+	document.querySelector("field_70Google").addEventListener("change", function() {
+		console.log('clicked');
+
+		document.getElementsByClassName("_field71")[0].style.display = "none";
+		document.getElementsByClassName("_field72")[0].style.display = "none";
+
+		  
+		
     });
 
    
