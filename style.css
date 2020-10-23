@@ -1683,3 +1683,7 @@ footer .info a {
 ._form-branding, ._marketing-by {
 	display: none !important;
 }
+
+._checkbox-radio span label { 
+	color: #6d6e70 !important;
+	}
