@@ -1687,3 +1687,19 @@ footer .info a {
 ._checkbox-radio span label { 
 	color: #6d6e70 !important;
 	}
+
+
+.form-container fieldset     /* padding: 0.35em 0.75em 0.625em; */
+    
+    border-color: white
+    border: 0px solid white !important;
+ 
+    padding-left: 0px!important;
+}
+
+.form-container fieldset span    /* padding: 0.35em 0.75em 0.625em; */
+    
+   
+ color: black !important;
+ 
+}
